@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112">
+  <g fill="#e5cc75">
+    <!-- H with tapered serifs and soft joins at the crossbar. -->
+    <path d="M9 33h18q1 0 1 1t-1 1c-4 0-6 2-6 7v14q0 3 3 3h14q3 0 3-3V42c0-5-2-7-6-7q-1 0-1-1t1-1h19q1 0 1 1t-1 1c-4 0-6 2-6 7v40c0 5 2 7 6 7q1 0 1 1t-1 1H35q-1 0-1-1t1-1c4 0 6-2 6-7V66q0-3-3-3H24q-3 0-3 3v16c0 5 2 7 6 7q1 0 1 1t-1 1H9q-1 0-1-1t1-1c4 0 5-2 5-7V42c0-5-1-7-5-7q-1 0-1-1t1-1z"/>
+    <!-- Mirrored B with rounded counters and a fuller lower bowl. -->
+    <path fill-rule="evenodd" d="M104 33q1 0 1 1t-1 1c-4 0-6 2-6 7v40c0 5 2 7 6 7q1 0 1 1t-1 1H83c-15 0-23-5-23-16 0-8 5-13 13-15-7-2-11-6-11-13 0-9 7-14 21-14zm-13 5q0-2-2-2h-5c-10 0-15 4-15 11 0 8 5 12 15 12h5q2 0 2-2zm0 27q0-2-2-2h-6c-10 0-15 4-15 12 0 9 5 13 15 13h6q2 0 2-2z"/>
+  </g>
+  <circle cx="44.5" cy="21" r="5" fill="none" stroke="#e5cc75" stroke-width="2.6"/>
+</svg>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Nguyen Phuc Huy Hoang — Unity Developer Intern portfolio. Explore Echoes Inside, Rocket Boost and Galaxy Strike: gameplay, Windows builds and source code.">
+  <meta property="og:title" content="Huy Hoang · Unity Developer Portfolio">
+  <meta property="og:description" content="Three small games. A growing craft. Explore my Unity and C# projects.">
+  <meta property="og:type" content="website">
+  <title>Huy Hoang · Unity Developer</title>
+  <link rel="icon" href="assets/hoang-monogram.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Huy Hoang, home"><img class="brand-mark" src="assets/hoang-monogram.svg" alt="" width="54" height="54"><span>HUY HOANG<span class="brand-sub">UNITY DEVELOPER</span></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a class="nav-link" href="#projects">Projects</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a>
+        <a class="button button-small" href="assets/NguyenPhucHuyHoang-CV.pdf" target="_blank" rel="noopener">View CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> UNITY DEVELOPER INTERN · PORTFOLIO</p>
+        <h1>Small worlds.<br><span>Playable stories.</span></h1>
+        <p class="hero-intro">Hi, I'm <strong>Nguyen Phuc Huy Hoang.</strong><br>A Software Engineering student building 2D games and 3D gameplay prototypes with Unity & C#.</p>
+        <a class="button button-solid" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a>
+        <div class="hero-caption"><span class="tiny-line"></span> Learning by building. One game at a time.</div>
+      </div>
+      <a class="hero-visual" href="#echoes-inside" aria-label="Explore Echoes Inside, featured project">
+        <img src="assets/echoes-inside.webp" alt="Pixel-art house at dusk from Echoes Inside" width="1672" height="941" fetchpriority="high">
+        <span class="visual-top"><span class="small-tag">FEATURED PROJECT</span><span aria-hidden="true">01 / 03</span></span>
+        <span class="visual-bottom"><span><span class="visual-kicker">A 2D PUZZLE ADVENTURE</span><span class="visual-title">Echoes Inside</span></span><span class="round-arrow" aria-hidden="true">→</span></span>
+      </a>
+    </section>
+
+    <div class="discipline-strip"><div class="container"><span>UNITY & C#</span><i></i><span>2D / 3D GAMEPLAY</span><i></i><span>PLAYABLE WINDOWS BUILDS</span><i></i><span>CODE ON GITHUB</span></div></div>
+
+    <section class="projects container" id="projects" aria-labelledby="projects-heading">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED WORK / 2026</p><h2 id="projects-heading">Games I've worked on<span class="gold">.</span></h2></div><p>Watch the gameplay.<br>Try a build. Explore the code.</p></div>
+      <div class="project-toolbar"><div class="filters" role="group" aria-label="Filter projects"><button class="filter active" type="button" data-filter="all" aria-pressed="true">All projects <span>03</span></button><button class="filter" type="button" data-filter="2d" aria-pressed="false">2D</button><button class="filter" type="button" data-filter="3d" aria-pressed="false">3D</button></div><span class="toolbar-note">BUILT IN UNITY · MADE TO BE PLAYED</span></div>
+      <p id="filter-status" class="sr-only" aria-live="polite"></p>
+
+      <article class="project" id="echoes-inside" data-category="2d">
+        <a class="project-image" href="https://youtu.be/Sz83NqdwNo0" data-video="Sz83NqdwNo0" data-title="Echoes Inside" aria-label="Watch Echoes Inside gameplay"><img src="assets/echoes-room.webp" alt="The grandmother's room in Echoes Inside, with detailed pixel-art furniture" width="1000" height="563" loading="lazy"><span class="image-corner">01 <span>/ ECHOES INSIDE</span></span><span class="play-button" aria-hidden="true">▶</span><span class="image-foot">WATCH GAMEPLAY</span></a>
+        <div class="project-copy">
+          <p class="eyebrow">2D PUZZLE ADVENTURE <span class="dot-divider">/</span> ACADEMIC PROJECT</p>
+          <h3>Echoes Inside</h3>
+          <p class="project-description">Echoes Inside is a 2D puzzle adventure about a family struggling to get along. Each family member has their own story and struggles. You play as a child in the family, exploring each room and solving puzzles to understand what the others are going through.</p>
+          <p class="project-description">The demo includes three chapters. Each introduces a different way to play and offers a new perspective on the tensions within the family.</p>
+          <ul class="feature-list">
+            <li>2D player movement with Rigidbody2D and directional animations with Animator.</li>
+            <li>Room-specific camera boundaries using Cinemachine Confiner 2D.</li>
+            <li>Scene transitions using Unity’s SceneManager, with inventory and chapter progress preserved during play.</li>
+          </ul>
+          <div class="tags"><span>C#</span><span>Cinemachine</span><span>2D Physics</span><span>Design Patterns</span></div>
+        <div class="project-links"><a class="button" href="https://drive.google.com/file/d/1xg0lNtY9XCEFTaLy4KmCPsGR9YP0gf4d/view?usp=drive_link" target="_blank" rel="noopener">Windows build <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/HiHonnn/Echoes-inside" target="_blank" rel="noopener">View source</a></div>
+        <details class="code-notes"><summary>A closer look at the code <span aria-hidden="true">+</span></summary><p>Developed for a design patterns course. A persistent GameManager tracks chapter progress; C# events connect puzzle completion to game flow. The project is also where I practise separating gameplay rules from scene and UI logic.</p><a href="https://youtu.be/Sz83NqdwNo0" target="_blank" rel="noopener">Open gameplay on YouTube</a></details></div>
+        <section class="art-assets" aria-labelledby="echoes-art-heading">
+          <div class="art-assets-copy">
+            <h4 id="echoes-art-heading">Art &amp; assets</h4>
+            <p>I used Makko AI to create pixel-art backgrounds and props for Echoes Inside.</p>
+            <a class="text-link" href="assets/echoes-makko-art-studio.png" target="_blank" rel="noopener">View full screenshot</a>
+          </div>
+          <figure class="art-assets-preview">
+            <img src="assets/echoes-makko-art-studio.png" alt="Makko AI Art Studio showing the pixel-art backgrounds and props in the GrandmaRoom collection" width="1890" height="943" loading="lazy">
+            <figcaption>GrandmaRoom asset collection in Makko AI Art Studio</figcaption>
+          </figure>
+        </section>
+      </article>
+
+      <article class="project project-reverse" id="rocket-boost" data-category="3d">
+        <a class="project-image" href="https://www.youtube.com/watch?v=5Ye5w867rZ8" data-video="5Ye5w867rZ8" data-title="Rocket Boost" aria-label="Watch Rocket Boost gameplay"><img src="assets/rocket-boost.webp" alt="Rocket Boost gameplay: guiding a rocket between platforms and obstacles" width="1280" height="720" loading="lazy"><span class="image-corner">02 <span>/ ROCKET BOOST</span></span><span class="play-button" aria-hidden="true">▶</span><span class="image-foot">WATCH GAMEPLAY</span></a>
+        <div class="project-copy"><p class="eyebrow">3D ROCKET NAVIGATION <span class="dot-divider">/</span> GUIDED PROJECT</p><h3>Rocket Boost</h3><p class="project-description">A little thrust. A careful landing. Navigate a rocket through three obstacle-filled levels, balancing momentum and rotation to reach the next landing pad.</p><ul class="feature-list"><li>Rigidbody-based thrust and rotation controls.</li><li>Moving obstacles, collision handling and level progression.</li><li>Audio and particles for thrust, crashes and successful landings.</li></ul><div class="tags"><span>C#</span><span>Rigidbody Physics</span><span>Input System</span><span>Particle System</span><span>AudioSource</span></div><div class="project-links"><a class="button" href="https://drive.google.com/file/d/1ADvhywfYg-bhwRpEh1mtsDNAZH8qJk6P/view?usp=drive_link" target="_blank" rel="noopener">Windows build <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/HiHonnn/Rocket-Boost" target="_blank" rel="noopener">View source</a></div><p class="project-credit">GameDev.tv course project · 1 week<br>Completed by following the course, with minor adjustments.</p></div>
+      </article>
+
+      <article class="project" id="galaxy-strike" data-category="3d">
+        <a class="project-image" href="https://www.youtube.com/watch?v=yGX_5YeIghY" data-video="yGX_5YeIghY" data-title="Galaxy Strike" aria-label="Watch Galaxy Strike gameplay"><img src="assets/galaxy-strike.webp" alt="Galaxy Strike gameplay: a spaceship flying through a 3D environment" width="1280" height="720" loading="lazy"><span class="image-corner">03 <span>/ GALAXY STRIKE</span></span><span class="play-button" aria-hidden="true">▶</span><span class="image-foot">WATCH GAMEPLAY</span></a>
+        <div class="project-copy"><p class="eyebrow">3D SPACE SHOOTER <span class="dot-divider">/</span> GUIDED PROJECT</p><h3>Galaxy Strike</h3><p class="project-description">Fly, aim and fight your way through enemy waves. A spaceship shooter that brings movement, particle weapons and cinematic sequences together in one playable level.</p><ul class="feature-list"><li>Bounded flight controls with smooth pitch and roll.</li><li>Mouse-aimed weapons, enemy health and score tracking.</li><li>Enemy waves, dialogue and voice lines using Timeline & Signals.</li></ul><div class="tags"><span>C#</span><span>Timeline</span><span>Input System</span><span>Particle Collision</span><span>Prefab Variants</span><span>Unity Terrain</span></div><div class="project-links"><a class="button" href="https://drive.google.com/file/d/1nEW2jd5ZCvF9AClZA8ErcEuuq31j-EaD/view?usp=drive_link" target="_blank" rel="noopener">Windows build <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/HiHonnn/Galaxy-Strike" target="_blank" rel="noopener">View source</a></div><p class="project-credit">GameDev.tv course project · ~2 weeks<br>Completed by following the course, with minor adjustments.</p></div>
+      </article>
+      <p class="play-note"><span aria-hidden="true">↳</span> To play: download a Windows build, extract the full archive, then run the .exe. Unity Editor is not required.</p>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-heading"><div class="container about-grid"><div><p class="eyebrow">A BIT ABOUT ME</p><h2 id="about-heading">Curious about games.<br><span class="gold">Serious about learning.</span></h2><p class="about-description">I'm Hoang, a Software Engineering student at Ho Chi Minh City University of Technology and Education. I enjoy turning ideas into playable interactions and understanding the code behind them.</p><p class="about-description">I'm looking for a Unity Developer internship where I can develop my gameplay programming skills, learn from an experienced team and contribute to real projects.</p><a class="text-link" href="assets/NguyenPhucHuyHoang-CV.pdf" target="_blank" rel="noopener">Read my CV</a></div><div class="about-facts"><div class="fact"><span class="fact-number">01</span><div><h3>Programming</h3><p>C# · OOP fundamentals · C# events</p></div></div><div class="fact"><span class="fact-number">02</span><div><h3>Unity development</h3><p>2D / 3D gameplay · Physics & collisions<br>Scene management · UI</p></div></div><div class="fact"><span class="fact-number">03</span><div><h3>Tools I work with</h3><p>Input System · Cinemachine · Timeline<br>Animator · Particle System · GitHub</p></div></div><div class="education"><span class="eyebrow">EDUCATION / 2023 — PRESENT</span><p>Software Engineering<br><span>HCMUTE · GPA 3.34 / 4.0</span></p></div></div></div></section>
+
+    <section class="contact container" id="contact" aria-labelledby="contact-heading"><p class="eyebrow"><span class="status-dot"></span> OPEN TO UNITY INTERNSHIP OPPORTUNITIES</p><div class="contact-row"><h2 id="contact-heading">Let's make something<br><span class="gold">playable.</span></h2><a class="contact-arrow" href="mailto:hoangnguyen6533@gmail.com" aria-label="Email Hoang">✉</a></div><div class="contact-bottom"><a class="email-link" href="mailto:hoangnguyen6533@gmail.com">hoangnguyen6533@gmail.com</a><div class="contact-links"><a href="https://github.com/HiHonnn" target="_blank" rel="noopener">GitHub</a><a href="tel:+84985915063">0985 915 063</a><span>Ho Chi Minh City, Vietnam</span></div></div></section>
+  </main>
+  <footer class="container footer"><span>© <span id="year">2026</span> Nguyen Phuc Huy Hoang</span><span>Built with curiosity. Powered by practice.</span><a href="#home">Back to top ↑</a></footer>
+
+  <dialog class="video-dialog" aria-labelledby="video-title"><div class="dialog-header"><h2 id="video-title">Gameplay</h2><button class="close-dialog" type="button" aria-label="Close gameplay video">✕</button></div><div class="video-container"></div><p class="video-fallback">Video not loading? <a id="youtube-fallback" href="https://www.youtube.com/" target="_blank" rel="noopener">Watch on YouTube</a></p></dialog>
+</body>
+</html>
